@@ -35,11 +35,11 @@
 #if defined(VIDEO_HLE_ALLOWED) && defined(AUDIO_HLE_ALLOWED)
 #define L_NAME "Z64 RSP Plugin (HLE)"
 #elif defined(VIDEO_HLE_ALLOWED)
-#define L_NAME "Z64 RSP Plugin (MLE)"
+#define L_NAME "Z64 RSP Plugin (HLE)"
 #elif defined(AUDIO_HLE_ALLOWED)
 #define L_NAME "Z64 RSP Plugin (LLE)"
 #else
-#define L_NAME "Z64 RSP Plugin"
+#define L_NAME "Z64 RSP Plugin (LLE)"
 #endif
 
 static void (*l_DebugCallback)(void *, int, const char *) = NULL;
